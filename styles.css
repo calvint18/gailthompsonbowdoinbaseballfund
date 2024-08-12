@@ -2,7 +2,6 @@
   font-family: Verdana, sans-serif;;
 }
 
-
 /* Implementing css to autoplay slider" by Asif Ali from 
 website: https://www.onlineittuts.com/automatic-image-slider-in-html-css.html 
 video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
@@ -123,7 +122,6 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
     margin: 0;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     
   }
 
@@ -272,4 +270,26 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   flex-direction: column;
   font-size: 25px;
   font-weight: bold;
+}
+
+/*Start of the G.A.I.L section */
+
+.gail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: center;
+}
+
+.gail-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.gail-row-top, .gail-row-bot {
+  display: flex;
+}
+
+.gail-element {
+  flex: 1;
 }
