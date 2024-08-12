@@ -6,47 +6,130 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
-</head>''
+</head>
 <body>
+    
+  <div class="parent">
+    <div class="left">
+      <div class="logo">
+        <img class="website-logo" src="images/website-logo.svg" href="index.html">
+      </div>
+    </div>
+    <div class="center">
+      <div class="website-name">Gale Foundation</div>
+    </div>
+    <div class="right">
+      <ul class="right-links-top">
+        <li> <a class="internal-link" href="#">Mission</a></li>
+        <li> <a class="internal-link" href="#">Leaderboard</a></li>
+        <li> <a class="internal-link" href="#">More About</a></li>
+      </ul>
+    </div>
+  </div>
+      
+      
+    </div>
+
     <!-- Making Slideshow to be displayed after header-->
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css" />
-      </head>
-      <body>
-        <section class="slider_container">
-          <section class="slider">
-            <div class="slide one">
-              <img src="images/og-bb-allcac.jpeg" alt="" />
-              <span class="caption"> slide one </span>
-            </div>
-            <div class="slide two">
-              <img src="images/og-bb-anthem.jpeg" alt="" />
-              <span class="caption"> slide two </span>
-            </div>
-            <div class="slide three">
-              <img src="images/og-bb-bogs.jpeg" alt="" />
-              <span class="caption"> slide three </span>
-            </div>
-            <div class="slide four">
-              <img src="images/og-bb-cjhomer.webp" alt="" />
-              <span class="caption"> slide four </span>
-            </div>
-            <div class="slide four">
-              <img src="images/og-bb-coachtalk.jpeg" alt="" />
-              <span class="caption"> slide five </span>
-            </div>
-          </section>
-        </section>
-      </body>
-    </html>
+
+    <div class="container">
+    <div class="donation">
+      <div class="dono-goal">Donation Goal</div>
+      <div class="donation-counter">3000/10000</div>
+
+    </div>
     
-    
-</body>
-<script src="scripts/script.js" defer></script>
+   <!-- Image Slider Start -->
+   <div class="slider">
+    <div class="slides">
+      <!-- Radio Button Start  -->
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <!-- Radio Button Close  -->
+
+      <!-- Slide Image Start -->
+      <div class="slide first">
+        <img src="images/purple-bb-allcac.svg" alt="">
+      </div>
+      <div class="slide">
+        <img src="images/purple-bb-anthem.svg" alt="">
+      </div>
+      <div class="slide">
+        <img src="images/purple-bb-bogs.svg" alt="">
+      </div>
+      <div class="slide">
+        <img src="images/purple-bb-coachtalk.svg" alt="">
+      </div>
+      <!-- Slide Image Close -->
+
+      <!-- Automatic Navigation Start -->
+      <div class="navigation-auto">
+        <div class="auto-btn-1"></div>
+        <div class="auto-btn-2"></div>
+        <div class="auto-btn-3"></div>
+        <div class="auto-btn-4"></div>
+      </div>
+      <!-- Automatic Navigation Close -->
+    </div>
+  
+      <!-- Mannual Navigation Start -->
+      <div class="navigation-mannual">
+        <label for="radio1" class="mannual-btn"></label>
+        <label for="radio2" class="mannual-btn"></label>
+        <label for="radio3" class="mannual-btn"></label>
+        <label for="radio4" class="mannual-btn"></label>
+      </div>
+      <!-- Mannual Navigation Close -->
+  </div>
+  <!-- Image Slider Close -->
+</div>
+
+<div class="divider">This is why were running.</div>
+
+
+
+<div class="rips">
+  <div class="rips-title">
+    <div class="rips-grid">
+      <div class="rips-row-top">
+        <div class="rips-row">
+          <div class="rips-element"></div>
+          <div class="rips-element"></div>
+        </div>
+      </div>
+      <button class="donate-button">DONATE</button>
+      <div class="rips-row-bot">
+        <div class="rips-row">
+          <div class="rips-element"></div>
+          <div class="rips-element"></div>
+        </div>
+      </div>
+    </button>
+  </div>
+</div>
+    <div class="footer">
+      <ul class="left-links">
+        <li><a href="#">Advertising</a></li>
+        <li><a href="#">Business</a></li>
+      </ul>
+      <ul class="right-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    var counter = 1;
+    setInterval(function()  {
+      document.getElementById('radio'+ counter).checked = true;
+      counter++; 
+
+      if(counter>4){
+        counter=1
+      }
+
+    }, 5000);
+  </script>
 </html>

@@ -1,101 +1,275 @@
-/* Implementing css to autoplay slider" */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: Verdana, sans-serif;;
 }
-body {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+
+
+/* Implementing css to autoplay slider" by Asif Ali from 
+website: https://www.onlineittuts.com/automatic-image-slider-in-html-css.html 
+video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
+  
+  .slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 500px;
+  }
+  
+  .navigation-mannual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mannual-btn{
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .mannual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .mannual-btn:hover{
+    background-color: #ccc;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /* Automatic Navigation */
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #333;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~.navigation-auto .auto-btn-1{
+    background: #ccc;
+  }
+  
+  #radio2:checked ~.navigation-auto .auto-btn-2{
+    background: #ccc;
+  }
+  
+  
+  #radio3:checked ~.navigation-auto .auto-btn-3{
+    background: #ccc;
+  }
+  
+  #radio4:checked ~.navigation-auto .auto-btn-4{
+    background: #ccc;
+  }
+
+  /* End of slideshow credits /*
+
+  /* Potential adjustments to slideshow regarding clickling on pictures */
+
+
+  /* Basic outline of webpage styling */
+
+  body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+  }
+
+
+  .container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+  }
+  
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+  }
+
+
+
+  .footer {
+    background: #eee;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+  }
+
+  .parent {
+    display: flex;
+  }
+  
+  .center {
+   
+  }
+
+  .right {
+    flex: 1;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+}
+  
+  .parent {
+    padding: 5px;
+    border: 2px white;
+    background-color: black;
+  }
+  .center,
+  .right {
+    padding: 3px
+    
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 2;
+    font-size: 35px;
+    color: white;
+    font-weight: bolder;
+  }
+
+  .right {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .left {
+    margin: 0 3px;
+    padding: 3px;
+    background-color: white;
+  }
+  
+
+  /* End of basic outline */
+  
+  /* Black Divider beneath slides */
+
+  .divider {
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: center;
+    font-weight: bold;
+  
+  }
+  li
+
+  /* adjusting logo to work header */
+
+
+.internal-link {
+  height: 75px;
+}
+
+.website-logo {
+  height: 75px;
+  flex: 1;
+}
+
+.website-name {
+  flex: 3;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.right-links-top a {
+  color: #c666fe;
+  font-weight: bold;
+}
+  
+
+/*Adding styles for donation counter */
+
+.container {
+  flex-direction: column;
+}
+
+.donation-counter {
+    border: black;
+    border-style: groove;
+    font-size: 40px;
+    background-color: white;
+    padding: 10px;
+}
+
+.dono-goal {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(29, 29, 29);
-}
-.slider_container {
-  position: relative;
-  width: 60%;
-  height: 40rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  overflow: hidden;
-}
-.slider {
-  position: relative;
-  width: 400%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  animation: 30s cubic-bezier(1, 0.95, 0.565, 1) sliding infinite;
-}
-.slide {
-  position: relative;
-  min-width: 100%;
-  height: 100%;
-}
-.slide img {
-  width: 100%;
-  height: 100%;
-}
-.slide .caption {
-  position: absolute;
-  left: 0;
-  bottom: 5%;
-  font-size: 5rem;
-  font-weight: 600;
-  color: white;
-  text-transform: capitalize;
-  background: rgba(0, 0, 0, 0.348);
-  backdrop-filter: blur(10px);
-  padding: 1rem 5rem;
-  border-radius: 0 2rem 2rem 0;
-}
-.slide.one {
-  background: rgb(182, 19, 109);
-}
-.slide.two {
-  background: rgb(255, 64, 64);
-}
-.slide.three {
-  background: rgb(11, 173, 188);
-}
-.slide.four {
-  background: rgb(11, 188, 14);
-}
-.slide.five {
-  background: rgb(173, 11, 188);
-}
-@keyframes sliding {
-  0% {
-    transform: translateX(0%);
-  }
-  20% {
-    transform: translateX(0%);
-  }
-  25% {
-    transform: translateX(-100%);
-  }
-  45% {
-    transform: translateX(-100%);
-  }
-  50% {
-    transform: translateX(-200%);
-  }
-  70% {
-    transform: translateX(-200%);
-  }
-  75% {
-    transform: translateX(-300%);
-  }
-  95% {
-    transform: translateX(-300%);
-  }
-  100% {
-    transform: translateX(-400%);
-  }
+  flex-direction: column;
+  font-size: 25px;
+  font-weight: bold;
 }
