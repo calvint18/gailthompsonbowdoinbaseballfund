@@ -213,11 +213,11 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
     background-color: black;
     color: white;
     width: 100vw;
-    height: 50px;
     font-size: 20px;
     text-align: center;
     vertical-align: center;
     font-weight: bold;
+    padding: 10px;
   
   }
   li
@@ -283,13 +283,50 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
 
 .gail-grid {
   display: flex;
-  flex-direction: column;
 }
 
 .gail-row-top, .gail-row-bot {
   display: flex;
+  flex-direction: column;
 }
 
 .gail-element {
   flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100vw;
+}
+
+.gail-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.gail-img {
+  height: 350px;
+}
+
+.big-letter {
+  font-size: 90px;
+  color: #8300d0;
+  font-weight: bolder;
+}
+
+.gail-label {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.gail-title {
+  font-size: 60px;
+  text-align: center;
+  padding: 40px;
+  color: #c666fe;
+}
+
+.d-purp {
+  font-weight: bold;
+  color: #8300d0;
 }
