@@ -261,6 +261,7 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
     font-size: 40px;
     background-color: white;
     padding: 10px;
+    text-align: center;
 }
 
 .dono-goal {
@@ -270,6 +271,7 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   flex-direction: column;
   font-size: 25px;
   font-weight: bold;
+  margin-top: 20px;
 }
 
 /*Start of the G.A.I.L section */
@@ -302,10 +304,13 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   display: flex;
   flex-direction: column;
   flex: 1;
+  padding: 10px;
+  margin-right: 25px;
 }
 
 .gail-img {
   height: 350px;
+  overflow: hidden;
 }
 
 .big-letter {
@@ -330,3 +335,62 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   font-weight: bold;
   color: #8300d0;
 }
+
+/* Read more button styling */
+
+.button {
+  background-color: #8300d0;
+  color: white;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #c666fe;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+  display: grid;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.button .icon {
+  background-color: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em gray;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #ccc;
+}
+
+.button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.button:active .icon {
+  transform: scale(0.95);
+}
+
