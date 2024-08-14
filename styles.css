@@ -159,9 +159,6 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
     display: flex;
   }
   
-  .center {
-   
-  }
 
   .right {
     flex: 1;
@@ -245,7 +242,7 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
 }
 
 .right-links-top a {
-  color: #c666fe;
+  color: #8300d0;
   font-weight: bold;
 }
   
@@ -423,4 +420,48 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   width: 300px;
   height: 300px;
 }
+
+/*Three options at bottom of the page */
+
+.options {
+  background-color: lightgray;
+  width: 70vw;
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.option1, .option2, .option3 {
+  background-color: black;
+  width: 15vw;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.option-text {
+  border-color: white;
+  border-style: double;
+  color: white;
+  flex: 2;
+}
+
+.top-logo {
+  width: 30px;
+  height: 30px;
+  
+}
+
+
+
 
