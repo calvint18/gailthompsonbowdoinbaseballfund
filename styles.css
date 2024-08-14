@@ -217,9 +217,10 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
     text-align: center;
     vertical-align: center;
     font-weight: bold;
-    padding: 10px;
-  
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
+
   li
 
   /* adjusting logo to work header */
@@ -285,11 +286,14 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
 
 .gail-grid {
   display: flex;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .gail-row-top, .gail-row-bot {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .gail-element {
@@ -310,7 +314,6 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
 
 .gail-img {
   height: 350px;
-  overflow: hidden;
 }
 
 .big-letter {
@@ -329,6 +332,7 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   text-align: center;
   padding: 40px;
   color: #c666fe;
+  background-color: lightgray;
 }
 
 .d-purp {
@@ -394,3 +398,9 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   transform: scale(0.95);
 }
 
+/* End of button styling */
+
+.about {
+  font-size: 20px;
+  text-align: center;
+}
