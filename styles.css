@@ -432,6 +432,8 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   justify-content: space-evenly;
   align-items: center;
   margin: 30px;
+  border: 10px;
+  border-style: groove;
 }
 
 .options-container {
@@ -468,6 +470,7 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   width: 15vw;
   height: 200px;
 }
+
 
 
 
