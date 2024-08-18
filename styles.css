@@ -360,6 +360,7 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   display: grid;
   margin: auto;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .button .icon {
@@ -426,7 +427,7 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
 .options {
   background-color: lightgray;
   width: 70vw;
-  height: 500px;
+  height: 700px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -443,10 +444,13 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
 .option1, .option2, .option3 {
   background-color: black;
   width: 15vw;
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-style: groove;
+  border-color: #c666fe;
+  border-width: thick;
 }
 
 .option-text {
@@ -454,13 +458,18 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   border-style: double;
   color: white;
   flex: 2;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  font-weight: 600;
 }
 
 .top-logo {
-  width: 30px;
-  height: 30px;
-  
+  width: 15vw;
+  height: 200px;
 }
+
+
 
 
 
