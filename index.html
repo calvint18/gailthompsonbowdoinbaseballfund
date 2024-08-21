@@ -28,9 +28,21 @@
       </ul>
     </div>
     <a class="center-right" href="#">
-      <div class="donate-now">DONATE</div>
+      <button id="openModal" class="donate-now">DONATE</button>
     </a>
   </div>
+
+  <!-- Adding Popup -->
+   <div class="modal" id="modal">
+    <div class="modal-inner">
+      <h2>Thank you For Looking to Donate</h2>
+      <p>If you wouldn't mind, I would appreciate if would fill out your name and email so we can contact you with updates.
+        I promise, we won't spam you its just so we may send out emails later.
+        Best, Cal
+      </p>
+      <button id="closeModal">Close</button>
+    </div>
+   </div>
       
       
 
@@ -292,16 +304,5 @@
 
 
   </body>
-  <script>
-    var counter = 1;
-    setInterval(function()  {
-      document.getElementById('radio'+ counter).checked = true;
-      counter++; 
-
-      if(counter>4){
-        counter=1
-      }
-
-    }, 5000);
-  </script>
+  <script src="scripts/script.js" defer></script>
 </html>

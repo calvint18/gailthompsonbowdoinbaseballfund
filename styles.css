@@ -183,19 +183,19 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   
 
   .center-right {
-    background-color: white;
-    border: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
     border: #8300d0 3px solid;
   }
 
   .donate-now {
+    background-color: white;
     color: #8300d0;
     font-size: 25px;
     font-weight: 500;
+    width: 100%;
+    height: 100%;
 
   }
   /* End of basic outline */
@@ -479,6 +479,50 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   height: 15vh;
 }
 
+/* Syling Popup */
+
+.button:active {
+  opacity: .8;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.open {
+  opacity: 1;
+  z-index: 999;
+}
+
+.modal-inner {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  padding: 15px 25px;
+  text-align: center;
+  width: 380px;
+}
+
+.modal-inner h2 {
+  margin: 0;
+}
+
+.modal-inner p {
+  line-height: 24px;
+  margin: 10px 0;
+}
 
 
 
