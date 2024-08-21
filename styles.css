@@ -434,6 +434,9 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   margin: 30px;
   border: 10px;
   border-style: groove;
+  flex-wrap: wrap;
+  flex: 1;
+  
 }
 
 .options-container {
@@ -451,9 +454,13 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   border-style: groove;
   border-color: #c666fe;
   border-width: thick;
+  min-width: 190px;
+  max-height: 483px;
+  margin: 30px;
 }
 
 .option-text {
@@ -469,7 +476,7 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
 
 .top-logo {
   width: 15vw;
-  height: ;
+  height: 15vh;
 }
 
 
