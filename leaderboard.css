@@ -1,0 +1,21 @@
+.top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-weight: bolder;
+    color: #8300d0;
+    font-size: 55px;
+    text-decoration: underline;
+    padding: 20px;
+    text-align: center;
+}
+
+.lb-meaning {
+    width: 70vw;
+    height: 25vh;
+    text-align: center;
+}

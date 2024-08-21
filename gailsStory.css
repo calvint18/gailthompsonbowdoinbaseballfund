@@ -1,0 +1,22 @@
+.story-label {
+    font-weight: bolder;
+    color: #8300d0;
+    font-size: 55px;
+    text-decoration: underline;
+    padding: 20px;
+    text-align: center;
+}
+
+.gs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.story-text {
+    width: 70vw;
+    height: 20vh;
+    text-align: center;
+}
+

@@ -182,9 +182,7 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
 
   .center {
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
     flex: 2;
     font-size: 35px;
     color: white;
@@ -194,6 +192,7 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   .right {
     display: flex;
     justify-content: flex-end;
+    padding: 10px;
   }
   .left {
     margin: 0 3px;
@@ -202,6 +201,22 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   }
   
 
+  .center-right {
+    background-color: white;
+    border: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: #8300d0 3px solid;
+  }
+
+  .donate-now {
+    color: #8300d0;
+    font-size: 25px;
+    font-weight: 500;
+
+  }
   /* End of basic outline */
   
   /* Black Divider beneath slides */
@@ -470,6 +485,7 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   width: 15vw;
   height: 200px;
 }
+
 
 
 
