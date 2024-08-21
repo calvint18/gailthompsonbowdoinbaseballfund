@@ -7,15 +7,16 @@ website: https://www.onlineittuts.com/automatic-image-slider-in-html-css.html
 video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   
   .slider{
-    width: 800px;
-    height: 500px;
+    width: 90vw;
+    height: 55vh;
     border-radius: 10px;
     overflow: hidden;
+    padding: 20px;
   }
   
   .slides{
     width: 500%;
-    height: 500px;
+    height: 55vh;
     display: flex;
   }
   
@@ -29,13 +30,13 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   }
   
   .slide img{
-    width: 800px;
-    height: 500px;
+    width: 90vw;
+    height: 55vh;
   }
   
   .navigation-mannual{
     position: absolute;
-    width: 800px;
+    width: 90vw;
     margin-top: -40px;
     display: flex;
     justify-content: center;
@@ -77,38 +78,17 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   .navigation-auto{
     position: absolute;
     display: flex;
-    width: 800px;
+    width: 90vw;
     justify-content: center;
-    margin-top: 460px;
+    margin-top: 46vh;
   }
   
   .navigation-auto div{
-    border: 2px solid #333;
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
   }
   
-  .navigation-auto div:not(:last-child){
-    margin-right: 40px;
-  }
-  
-  #radio1:checked ~.navigation-auto .auto-btn-1{
-    background: #ccc;
-  }
-  
-  #radio2:checked ~.navigation-auto .auto-btn-2{
-    background: #ccc;
-  }
-  
-  
-  #radio3:checked ~.navigation-auto .auto-btn-3{
-    background: #ccc;
-  }
-  
-  #radio4:checked ~.navigation-auto .auto-btn-4{
-    background: #ccc;
-  }
 
   /* End of slideshow credits /*
 
@@ -157,6 +137,7 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
 
   .parent {
     display: flex;
+    flex-wrap: wrap;
   }
   
 
@@ -314,18 +295,21 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   justify-content: space-between;
   padding: 40px;
   width: 100vw;
+  flex-wrap: wrap;
 }
 
 .gail-text {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 10px;
+  padding: 35px;
+  width: 50vw;
+  padding-left: 0;
   margin-right: 25px;
 }
 
 .gail-img {
-  height: 350px;
+  height: 40vh;
 }
 
 .big-letter {
@@ -429,6 +413,7 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
 .about-imgs {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 30px;
 }
 
@@ -442,7 +427,7 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
 .options {
   background-color: lightgray;
   width: 70vw;
-  height: 700px;
+  height: 81vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -456,12 +441,13 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .option1, .option2, .option3 {
   background-color: black;
   width: 15vw;
-  height: 500px;
+  height: 58vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -483,7 +469,7 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
 
 .top-logo {
   width: 15vw;
-  height: 200px;
+  height: ;
 }
 
 
