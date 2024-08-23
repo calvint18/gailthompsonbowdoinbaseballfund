@@ -13,6 +13,7 @@ var counter = 1;
 const openBtn = document.getElementById("openModal");
 const closeBtn = document.getElementById("closeModal");
 const modal = document.getElementById("modal");
+const mainButton = document.getElementById("main-dono")
 
 openBtn.addEventListener('click', () => {
     modal.classList.add('open');
@@ -21,4 +22,11 @@ openBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     modal.classList.remove('open');
 });
+
+mainButton.addEventListener('click', () => {
+  modal.classList.add('open');
+});
+
+
+
 
