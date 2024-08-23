@@ -328,8 +328,24 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   text-align: center;
   padding: 40px;
   color: #c666fe;
-  background-color: lightgray;
+  text-decoration: underline #8300d0 ;
+  
 }
+
+.gail-prom {
+  width: 30vw;
+  padding: 20px;
+}
+
+.gail-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+
+}
+
 
 .d-purp {
   font-weight: bold;
