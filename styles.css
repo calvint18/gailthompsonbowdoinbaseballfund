@@ -2,97 +2,80 @@
   font-family: Verdana, sans-serif;;
 }
 
-/* Implementing css to autoplay slider" by Asif Ali from 
-website: https://www.onlineittuts.com/automatic-image-slider-in-html-css.html 
-video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
-  
-  .slider{
-    width: 90vw;
-    height: 55vh;
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 20px;
-  }
-  
-  .slides{
-    width: 500%;
-    height: 55vh;
-    display: flex;
-  }
-  
-  .slides input{
-    display: none;
-  }
-  
-  .slide{
-    width: 20%;
-    transition: 2s;
-  }
-  
-  .slide img{
-    width: 90vw;
-    height: 55vh;
-  }
-  
-  .navigation-mannual{
-    position: absolute;
-    width: 90vw;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .mannual-btn{
-    border: 2px solid #ccc;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-  }
-  
-  .mannual-btn:not(:last-child){
-    margin-right: 40px;
-  }
-  
-  .mannual-btn:hover{
-    background-color: #ccc;
-  }
-  
-  #radio1:checked ~ .first{
-    margin-left: 0;
-  }
-  
-  #radio2:checked ~ .first{
-    margin-left: -20%;
-  }
-  
-  #radio3:checked ~ .first{
-    margin-left: -40%;
-  }
-  
-  #radio4:checked ~ .first{
-    margin-left: -60%;
-  }
-  
-  /* Automatic Navigation */
-  .navigation-auto{
-    position: absolute;
-    display: flex;
-    width: 90vw;
-    justify-content: center;
-    margin-top: 46vh;
-  }
-  
-  .navigation-auto div{
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-  }
-  
+/* Above the fold styling */
 
-  /* End of slideshow credits /*
+.main {
+  height: 100vh;
+  width: 100vw;
+}
 
-  /* Potential adjustments to slideshow regarding clickling on pictures */
+
+.image-container {
+  width: 100vw;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-text {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-text div{
+  color: whitesmoke;
+  font-size: 26px;
+  text-align: center;
+  font-weight: 500;
+  padding: 10px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.overlay-text-title div{
+  font-size: 100px;
+  text-align: center;
+  font-weight: 500;
+  padding: 10px;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+}
+
+
+.overlay-text button {
+  background-color: #ad7de3;;
+}
+
+
+  .button-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #main-dono {
+    margin-right: 10px;
+    min-width: 250px;
+    min-height: 40px;
+  }
+
+  #donate-link {
+    min-width: 250px;
+    min-height: 40px;
+  }
+
 
 
   /* Basic outline of webpage styling */
@@ -370,7 +353,7 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   overflow: hidden;
   position: relative;
   height: 2.8em;
-  padding-right: 3.3em;
+  padding-right: 2.8em;
   cursor: pointer;
   display: grid;
   margin: auto;
@@ -391,6 +374,7 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
   box-shadow: 0.1em 0.1em 0.6em 0.2em gray;
   right: 0.3em;
   transition: all 0.3s;
+  padding: 0;
 }
 
 .button:hover .icon {
@@ -737,7 +721,6 @@ video credits: https://www.youtube.com/watch?v=Fbc3lfe3T7s */
           }
       
           /*=====  End of Fields  ======*/
-
 
 
 
